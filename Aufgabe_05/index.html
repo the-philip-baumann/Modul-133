@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style type="text/css">
+	.small{
+		width: 100px;
+	}
+	.medium{
+		width: 200px;
+	}
+	.large{
+		width: 300px;
+	}
+
+	input {
+		margin: 5px;
+	}
+
+</style>
+<main>
+
+	<form>
+		<h1>Benutzererfassung</h1>
+		<section class="form-group">
+			<input type="text" name="firstname" id="firstname" class="medium" placeholder="Vorname" required>
+			<input type="text" name="lastname" id="lastname" class="medium" placeholder="Nachname" required>
+		</section>
+		<section class="form-group">
+			<input type="text" name="street" id="street" class="large" placeholder="Strasse" required>
+			<input type="number" name="number" id="number" class="small" placeholder="Nr.">
+		</section>
+		<section class="form-group">
+			<input type="number" name="postcode" id="postcode" class="small" placeholder="PLZ" pattern="\d{4}" required>
+			<input type="text" name="place" id="place" class="large" placeholder="Ort" required>
+		</section>
+		<section class="form-group">
+			<input type="number" name="age" id="age" class="small" placeholder="Alter" >
+			<input type="email" name="email" id="email" class="large" placeholder="Email-Adresse" required >
+		</section>
+		<section class="form-group">
+			<input type="button" value="Verwerfen"></input>
+			<input type="submit" value="Absenden">
+		</section>
+	</form>
+</main>
+</body>
+</html>
